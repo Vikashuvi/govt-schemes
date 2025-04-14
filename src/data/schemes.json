@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "name": "PM Kisan Samman Nidhi",
+    "description": "Income support of ₹6000 per year in three equal installments to all land holding farmer families.",
+    "eligibility": {
+      "occupation": ["Farmer"],
+      "income": "Any",
+      "age": "Any",
+      "gender": "Any",
+      "caste": "Any",
+      "state": "All"
+    },
+    "tags": ["For Farmers", "Income Support", "Central Scheme"],
+    "applyUrl": "https://pmkisan.gov.in/"
+  },
+  {
+    "id": 2,
+    "name": "PM-KISAN Credit Card",
+    "description": "Provides farmers with affordable credit for their agricultural needs and other expenses.",
+    "eligibility": {
+      "occupation": ["Farmer"],
+      "income": "Any",
+      "age": "18-65",
+      "gender": "Any",
+      "caste": "Any",
+      "state": "All"
+    },
+    "tags": ["For Farmers", "Credit", "Central Scheme"],
+    "applyUrl": "https://pmkisan.gov.in/"
+  },
+  {
+    "id": 3,
+    "name": "Pradhan Mantri Awas Yojana (PMAY)",
+    "description": "Housing for all by 2022 - provides financial assistance for construction of pucca houses for eligible households.",
+    "eligibility": {
+      "occupation": ["Any"],
+      "income": "Below 3 Lakhs",
+      "age": "Any",
+      "gender": "Any",
+      "caste": "Any",
+      "state": "All"
+    },
+    "tags": ["Housing", "Low Income", "Central Scheme"],
+    "applyUrl": "https://pmaymis.gov.in/"
+  },
+  {
+    "id": 4,
+    "name": "Pradhan Mantri Mudra Yojana",
+    "description": "Provides loans up to ₹10 lakh to non-corporate, non-farm small/micro enterprises.",
+    "eligibility": {
+      "occupation": ["Entrepreneur"],
+      "income": "Any",
+      "age": "18-65",
+      "gender": "Any",
+      "caste": "Any",
+      "state": "All"
+    },
+    "tags": ["For Entrepreneurs", "Loan", "Central Scheme"],
+    "applyUrl": "https://www.mudra.org.in/"
+  },
+  {
+    "id": 5,
+    "name": "Sukanya Samriddhi Yojana",
+    "description": "Small savings scheme for girl child education and marriage needs with tax benefits.",
+    "eligibility": {
+      "occupation": ["Any"],
+      "income": "Any",
+      "age": "Any",
+      "gender": "Female",
+      "caste": "Any",
+      "state": "All"
+    },
+    "tags": ["For Girls", "Education", "Savings", "Central Scheme"],
+    "applyUrl": "https://www.indiapost.gov.in/Financial/Pages/Content/Sukanya-Samriddhi-Account.aspx"
+  },
+  {
+    "id": 6,
+    "name": "PM Shram Yogi Maandhan",
+    "description": "Pension scheme for unorganized workers with monthly income up to ₹15,000.",
+    "eligibility": {
+      "occupation": ["Unemployed", "Other"],
+      "income": "Below 1.5 Lakhs",
+      "age": "18-40",
+      "gender": "Any",
+      "caste": "Any",
+      "state": "All"
+    },
+    "tags": ["Pension", "Unorganized Sector", "Central Scheme"],
+    "applyUrl": "https://maandhan.in/"
+  },
+  {
+    "id": 7,
+    "name": "National Scholarship Portal",
+    "description": "Single-window platform for scholarships to students from minority communities, SC, ST, OBC, etc.",
+    "eligibility": {
+      "occupation": ["Student"],
+      "income": "Below 6 Lakhs",
+      "age": "Below 25",
+      "gender": "Any",
+      "caste": ["SC/ST", "OBC", "EWS"],
+      "state": "All"
+    },
+    "tags": ["For Students", "Scholarship", "Education", "Central Scheme"],
+    "applyUrl": "https://scholarships.gov.in/"
+  },
+  {
+    "id": 8,
+    "name": "Pradhan Mantri Vaya Vandana Yojana",
+    "description": "Pension scheme for senior citizens providing assured pension based on investment.",
+    "eligibility": {
+      "occupation": ["Any"],
+      "income": "Any",
+      "age": "Above 60",
+      "gender": "Any",
+      "caste": "Any",
+      "state": "All"
+    },
+    "tags": ["For Senior Citizens", "Pension", "Central Scheme"],
+    "applyUrl": "https://licindia.in/Products/Pension-Plans/Pradhan-Mantri-Vaya-Vandana-Yojana"
+  },
+  {
+    "id": 9,
+    "name": "Stand Up India",
+    "description": "Facilitates bank loans between ₹10 lakh and ₹1 crore to SC/ST and women entrepreneurs.",
+    "eligibility": {
+      "occupation": ["Entrepreneur"],
+      "income": "Any",
+      "age": "18-65",
+      "gender": ["Female"],
+      "caste": ["SC/ST", "Any"],
+      "state": "All"
+    },
+    "tags": ["For Women", "For SC/ST", "Entrepreneurship", "Loan", "Central Scheme"],
+    "applyUrl": "https://www.standupmitra.in/"
+  },
+  {
+    "id": 10,
+    "name": "PM Ujjwala Yojana",
+    "description": "Provides LPG connections to women from Below Poverty Line (BPL) households.",
+    "eligibility": {
+      "occupation": ["Any"],
+      "income": "Below 1.5 Lakhs",
+      "age": "Above 18",
+      "gender": "Female",
+      "caste": "Any",
+      "state": "All"
+    },
+    "tags": ["For Women", "BPL", "LPG Connection", "Central Scheme"],
+    "applyUrl": "https://pmuy.gov.in/"
+  },
+  {
+    "id": 11,
+    "name": "Atal Pension Yojana",
+    "description": "Pension scheme focused on unorganized sector workers providing guaranteed pension after 60 years of age.",
+    "eligibility": {
+      "occupation": ["Any"],
+      "income": "Any",
+      "age": "18-40",
+      "gender": "Any",
+      "caste": "Any",
+      "state": "All"
+    },
+    "tags": ["Pension", "Unorganized Sector", "Central Scheme"],
+    "applyUrl": "https://www.npscra.nsdl.co.in/scheme-details.php"
+  },
+  {
+    "id": 12,
+    "name": "PM Kaushal Vikas Yojana",
+    "description": "Skill development initiative scheme for youth to get industry-relevant skill training.",
+    "eligibility": {
+      "occupation": ["Student", "Unemployed"],
+      "income": "Any",
+      "age": "18-35",
+      "gender": "Any",
+      "caste": "Any",
+      "state": "All"
+    },
+    "tags": ["Skill Development", "For Youth", "Training", "Central Scheme"],
+    "applyUrl": "https://www.pmkvyofficial.org/"
+  },
+  {
+    "id": 13,
+    "name": "Pradhan Mantri Mudra Yojana (PMMY)",
+    "description": "Provides loans up to ₹10 lakh to non-corporate, non-farm small/micro enterprises through MUDRA loans: Shishu, Kishore, and Tarun.",
+    "eligibility": {
+      "occupation": ["Entrepreneur", "Self-employed"],
+      "income": "Any",
+      "age": "Above 18",
+      "gender": "Any",
+      "caste": "Any",
+      "state": "All"
+    },
+    "tags": ["For Entrepreneurs", "Business Loan", "MSME", "Central Scheme"],
+    "applyUrl": "https://www.mudra.org.in/"
+  },
+  {
+    "id": 14,
+    "name": "Credit Guarantee Fund Trust for Micro and Small Enterprises (CGTMSE)",
+    "description": "Provides credit guarantee to financial institutions to enable them to provide collateral-free loans to MSMEs.",
+    "eligibility": {
+      "occupation": ["Entrepreneur"],
+      "income": "Any",
+      "age": "Above 18",
+      "gender": "Any",
+      "caste": "Any",
+      "state": "All"
+    },
+    "tags": ["For Entrepreneurs", "MSME", "Collateral-free Loan", "Central Scheme"],
+    "applyUrl": "https://www.cgtmse.in/"
+  },
+  {
+    "id": 15,
+    "name": "Prime Minister's Employment Generation Programme (PMEGP)",
+    "description": "Credit-linked subsidy program for setting up new micro-enterprises and generating employment in rural and urban areas.",
+    "eligibility": {
+      "occupation": ["Entrepreneur", "Unemployed"],
+      "income": "Any",
+      "age": "Above 18",
+      "gender": "Any",
+      "caste": "Any",
+      "state": "All"
+    },
+    "tags": ["For Entrepreneurs", "Subsidy", "Employment Generation", "Central Scheme"],
+    "applyUrl": "https://msme.gov.in/schemes/prime-ministers-employment-generation-programme-pmegp"
+  },
+  {
+    "id": 16,
+    "name": "Credit Linked Capital Subsidy Scheme (CLCSS)",
+    "description": "Facilitates technology upgradation for MSMEs by providing 15% capital subsidy on institutional finance up to ₹1 crore.",
+    "eligibility": {
+      "occupation": ["Entrepreneur"],
+      "income": "Any",
+      "age": "Any",
+      "gender": "Any",
+      "caste": "Any",
+      "state": "All"
+    },
+    "tags": ["For Entrepreneurs", "Technology Upgradation", "MSME", "Subsidy", "Central Scheme"],
+    "applyUrl": "https://msme.gov.in/schemes/technology-upgradation-and-quality-certification"
+  },
+  {
+    "id": 17,
+    "name": "Startup India Seed Fund Scheme",
+    "description": "Provides financial assistance to startups for proof of concept, prototype development, product trials, market entry, and commercialization.",
+    "eligibility": {
+      "occupation": ["Entrepreneur"],
+      "income": "Any",
+      "age": "Any",
+      "gender": "Any",
+      "caste": "Any",
+      "state": "All"
+    },
+    "tags": ["For Startups", "Seed Funding", "Innovation", "Central Scheme"],
+    "applyUrl": "https://www.startupindia.gov.in/content/sih/en/government-schemes/seed-fund-scheme.html"
+  },
+  {
+    "id": 18,
+    "name": "ZED (Zero Defect Zero Effect) Certification Scheme",
+    "description": "Promotes quality and green manufacturing among MSMEs with financial support for ZED certification and consultancy.",
+    "eligibility": {
+      "occupation": ["Entrepreneur"],
+      "income": "Any",
+      "age": "Any",
+      "gender": "Any",
+      "caste": "Any",
+      "state": "All"
+    },
+    "tags": ["For Entrepreneurs", "Quality Certification", "MSME", "Manufacturing", "Central Scheme"],
+    "applyUrl": "https://zed.msme.gov.in/"
+  },
+  {
+    "id": 19,
+    "name": "A Scheme for Promotion of Innovation, Rural Industries and Entrepreneurship (ASPIRE)",
+    "description": "Creates a network of technology and incubation centers to accelerate entrepreneurship and promote startups for innovation in agro and rural industry.",
+    "eligibility": {
+      "occupation": ["Entrepreneur", "Student"],
+      "income": "Any",
+      "age": "Any",
+      "gender": "Any",
+      "caste": "Any",
+      "state": "All"
+    },
+    "tags": ["For Entrepreneurs", "Rural Industry", "Innovation", "Incubation", "Central Scheme"],
+    "applyUrl": "https://msme.gov.in/schemes/entrepreneurship-and-skill-development"
+  },
+  {
+    "id": 20,
+    "name": "Trade Related Entrepreneurship Assistance and Development (TREAD) Scheme for Women",
+    "description": "Provides financial loans through NGOs and training & counseling for women entrepreneurs in non-farm activities.",
+    "eligibility": {
+      "occupation": ["Entrepreneur"],
+      "income": "Any",
+      "age": "Above 18",
+      "gender": "Female",
+      "caste": "Any",
+      "state": "All"
+    },
+    "tags": ["For Women", "Entrepreneurship", "Training", "Central Scheme"],
+    "applyUrl": "https://msme.gov.in/schemes/entrepreneurship-and-skill-development"
+  }
+]
