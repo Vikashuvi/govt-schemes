@@ -9,7 +9,7 @@ const clerkPubKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
 // Check if the key is available
 if (!clerkPubKey) {
-  console.error('Missing Clerk publishable key. Please add it to your .env file.');
+  // Handle missing key silently
 }
 
 createRoot(document.getElementById('root')).render(

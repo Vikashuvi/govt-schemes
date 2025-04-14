@@ -16,7 +16,7 @@ const SchemeCard = ({ scheme }) => {
           setIsSaved(savedSchemes.some(savedScheme => savedScheme.id === scheme.id));
         }
       } catch (error) {
-        console.error('Error checking saved status:', error);
+        // Silent error handling for demo purposes
       }
     }
   }, [isSignedIn, user, scheme.id]);
@@ -41,7 +41,7 @@ const SchemeCard = ({ scheme }) => {
       localStorage.setItem(`savedSchemes_${user.id}`, JSON.stringify(savedSchemes));
       setIsSaved(!isSaved);
     } catch (error) {
-      console.error('Error saving scheme:', error);
+      // Silent error handling for demo purposes
     }
   };
 

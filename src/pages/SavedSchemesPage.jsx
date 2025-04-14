@@ -25,7 +25,7 @@ const SavedSchemesPage = () => {
             setSavedSchemes(JSON.parse(savedSchemesData));
           }
         } catch (error) {
-          console.error('Error fetching saved schemes:', error);
+          // Silent error handling for demo purposes
         } finally {
           setLoading(false);
         }
@@ -82,7 +82,7 @@ const SavedSchemesPage = () => {
                 message={
                   <div className="flex flex-col items-center">
                     <AlertCircle size={40} className="mb-2 text-blue-500" />
-                    <p className="text-center">You haven't saved any schemes yet. Browse schemes and click "Save" to add them to your collection.</p>
+                    <span className="text-center">You haven't saved any schemes yet. Browse schemes and click "Save" to add them to your collection.</span>
                   </div>
                 }
               />

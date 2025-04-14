@@ -20,7 +20,7 @@ const Alert = ({ type = 'info', message, onClose }) => {
       <div className="flex items-start">
         <div className="flex-shrink-0">{icons[type]}</div>
         <div className="ml-3 flex-1">
-          <p className="text-sm font-medium">{message}</p>
+          <div className="text-sm font-medium">{message}</div>
         </div>
         {onClose && (
           <button
