@@ -14,12 +14,12 @@ const SignUpPage = () => {
           <div className="text-center mb-8">
             <h1 className="text-3xl font-bold text-blue-700 mb-2">Create Your Account</h1>
             <p className="text-gray-600">
-              Join Yojana Finder to save schemes and get personalized recommendations
+              Join SarkariNidhi to save schemes and get personalized recommendations
             </p>
           </div>
-          
+
           <div className="bg-white rounded-lg shadow-md p-6">
-            <SignUp 
+            <SignUp
               path="/sign-up"
               routing="path"
               signInUrl="/sign-in"

@@ -9,8 +9,8 @@ const Navbar = () => {
     <nav className="bg-blue-700 text-white shadow-md">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <Link to="/" className="text-xl font-bold flex items-center">
-          <span className="text-yellow-300">Yojana</span>
-          <span className="ml-1">Finder</span>
+          <span className="text-yellow-300">Sarkari</span>
+          <span className="ml-1">Nidhi</span>
         </Link>
 
         <div className="flex space-x-4 md:space-x-6 items-center">

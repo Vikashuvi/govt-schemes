@@ -9,8 +9,8 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <div className="text-xl font-bold">
-              <span className="text-yellow-300">Yojana</span>
-              <span>Finder</span>
+              <span className="text-yellow-300">Sarkari</span>
+              <span>Nidhi</span>
             </div>
             <p className="text-blue-200 text-sm mt-1">
               Helping Indians discover government schemes they deserve
@@ -24,7 +24,7 @@ const Footer = () => {
               <span>for India</span>
             </div>
             <p className="text-blue-200 text-xs mt-1">
-              © {currentYear} YojanaFinder. All rights reserved.
+              © {currentYear} SarkariNidhi. All rights reserved.
             </p>
           </div>
         </div>
