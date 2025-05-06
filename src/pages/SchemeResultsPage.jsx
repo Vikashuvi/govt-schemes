@@ -33,72 +33,119 @@ const SchemeResultsPage = () => {
     // Simulate loading data
     const timer = setTimeout(() => {
       const storedProfile = localStorage.getItem('userProfile');
-      
+
       if (!storedProfile) {
         navigate('/eligibility');
         return;
       }
-      
+
       setUserProfile(JSON.parse(storedProfile));
       setLoading(false);
     }, 1500);
-    
+
     return () => clearTimeout(timer);
   }, [navigate]);
 
   useEffect(() => {
     if (!userProfile) return;
-    
+
     // Filter schemes based on user profile
     // This is a simplified filtering logic - in a real app, this would be more sophisticated
     let filtered = [...schemes];
-    
-    // Apply active filters if any
+
+    // First, filter by user profile data
+    filtered = filtered.filter(scheme => {
+      // Check occupation eligibility
+      const occupationMatch =
+        scheme.eligibility.occupation.includes(userProfile.occupation) ||
+        scheme.eligibility.occupation.includes('Any');
+
+      // Check gender eligibility
+      const genderMatch =
+        scheme.eligibility.gender === userProfile.gender ||
+        scheme.eligibility.gender === 'Any' ||
+        (Array.isArray(scheme.eligibility.gender) &&
+          scheme.eligibility.gender.includes(userProfile.gender));
+
+      // Check caste eligibility
+      const casteMatch =
+        scheme.eligibility.caste === userProfile.caste ||
+        scheme.eligibility.caste === 'Any' ||
+        (Array.isArray(scheme.eligibility.caste) &&
+          scheme.eligibility.caste.includes(userProfile.caste));
+
+      // Check age eligibility (simplified)
+      const age = parseInt(userProfile.age);
+      let ageMatch = true;
+
+      if (scheme.eligibility.age && scheme.eligibility.age !== 'Any') {
+        if (scheme.eligibility.age === 'Below 25' && age >= 25) ageMatch = false;
+        else if (scheme.eligibility.age === '25-40' && (age < 25 || age > 40)) ageMatch = false;
+        else if (scheme.eligibility.age === '40-60' && (age < 40 || age > 60)) ageMatch = false;
+        else if (scheme.eligibility.age === 'Above 60' && age <= 60) ageMatch = false;
+      }
+
+      // Check income eligibility (simplified)
+      const income = parseInt(userProfile.annualIncome);
+      let incomeMatch = true;
+
+      if (scheme.eligibility.income) {
+        if (scheme.eligibility.income === 'Below 2.5L' && income >= 250000) incomeMatch = false;
+        else if (scheme.eligibility.income === '2.5L-5L' && (income < 250000 || income > 500000)) incomeMatch = false;
+        else if (scheme.eligibility.income === '5L-10L' && (income < 500000 || income > 1000000)) incomeMatch = false;
+        else if (scheme.eligibility.income === 'Above 10L' && income <= 1000000) incomeMatch = false;
+      }
+
+      // Return true if all criteria match
+      return occupationMatch && genderMatch && casteMatch && ageMatch && incomeMatch;
+    });
+
+    // Then apply active filters if any
     if (activeFilters.occupation.length > 0) {
-      filtered = filtered.filter(scheme => 
-        activeFilters.occupation.some(filter => 
-          scheme.eligibility.occupation.includes(filter) || 
+      filtered = filtered.filter(scheme =>
+        activeFilters.occupation.some(filter =>
+          scheme.eligibility.occupation.includes(filter) ||
           scheme.eligibility.occupation.includes('Any')
         )
       );
     }
-    
+
     if (activeFilters.caste.length > 0) {
-      filtered = filtered.filter(scheme => 
-        activeFilters.caste.some(filter => 
-          scheme.eligibility.caste === filter || 
+      filtered = filtered.filter(scheme =>
+        activeFilters.caste.some(filter =>
+          scheme.eligibility.caste === filter ||
           scheme.eligibility.caste === 'Any' ||
           scheme.eligibility.caste.includes(filter)
         )
       );
     }
-    
+
     if (activeFilters.gender.length > 0) {
-      filtered = filtered.filter(scheme => 
-        activeFilters.gender.some(filter => 
-          scheme.eligibility.gender === filter || 
+      filtered = filtered.filter(scheme =>
+        activeFilters.gender.some(filter =>
+          scheme.eligibility.gender === filter ||
           scheme.eligibility.gender === 'Any' ||
           scheme.eligibility.gender.includes(filter)
         )
       );
     }
-    
+
     // Apply search term filter
     if (searchTerm) {
-      filtered = filtered.filter(scheme => 
+      filtered = filtered.filter(scheme =>
         scheme.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
         scheme.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
         scheme.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()))
       );
     }
-    
+
     setFilteredSchemes(filtered);
   }, [userProfile, activeFilters, searchTerm]);
 
   const toggleFilter = (category, value) => {
     setActiveFilters(prev => {
       const newFilters = { ...prev };
-      
+
       if (newFilters[category].includes(value)) {
         // Remove filter if already active
         newFilters[category] = newFilters[category].filter(item => item !== value);
@@ -106,7 +153,7 @@ const SchemeResultsPage = () => {
         // Add filter
         newFilters[category] = [...newFilters[category], value];
       }
-      
+
       return newFilters;
     });
   };
@@ -155,7 +202,7 @@ const SchemeResultsPage = () => {
                   onChange={(e) => setSearchTerm(e.target.value)}
                 />
               </div>
-              
+
               <button
                 onClick={() => setShowFilters(!showFilters)}
                 className="flex items-center text-indigo-600 hover:text-indigo-800 transition-colors"
@@ -183,7 +230,7 @@ const SchemeResultsPage = () => {
                     Clear All
                   </button>
                 </div>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                   {Object.entries(filterOptions).map(([category, options]) => (
                     <div key={category}>
@@ -211,12 +258,13 @@ const SchemeResultsPage = () => {
           {/* Results */}
           {filteredSchemes.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filteredSchemes.map((scheme) => (
+              {filteredSchemes.map((scheme, index) => (
                 <motion.div
                   key={scheme.id}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3 }}
+                  transition={{ duration: 0.3, delay: index * 0.05 }}
+                  className="h-full"
                 >
                   <SchemeCard scheme={scheme} />
                 </motion.div>

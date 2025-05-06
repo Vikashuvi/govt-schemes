@@ -17,14 +17,14 @@ const AllSchemesPage = () => {
       setLoading(false);
       setFilteredSchemes(schemes);
     }, 1000);
-    
+
     return () => clearTimeout(timer);
   }, []);
 
   useEffect(() => {
     // Filter schemes based on search term
     if (searchTerm) {
-      const filtered = schemes.filter(scheme => 
+      const filtered = schemes.filter(scheme =>
         scheme.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
         scheme.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
         scheme.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()))
@@ -73,12 +73,13 @@ const AllSchemesPage = () => {
           {/* Results */}
           {filteredSchemes.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filteredSchemes.map((scheme) => (
+              {filteredSchemes.map((scheme, index) => (
                 <motion.div
                   key={scheme.id}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3 }}
+                  transition={{ duration: 0.3, delay: index * 0.05 }}
+                  className="h-full"
                 >
                   <SchemeCard scheme={scheme} />
                 </motion.div>
