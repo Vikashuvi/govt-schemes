@@ -12,7 +12,8 @@
       "state": "All"
     },
     "tags": ["For Farmers", "Income Support", "Central Scheme"],
-    "applyUrl": "https://pmkisan.gov.in/"
+    "applyUrl": "https://pmkisan.gov.in/",
+    "imageUrl": "/images/schemes/agriculture-farmer-1.jpg"
   },
   {
     "id": 2,
@@ -27,7 +28,8 @@
       "state": "All"
     },
     "tags": ["For Farmers", "Credit", "Central Scheme"],
-    "applyUrl": "https://pmkisan.gov.in/"
+    "applyUrl": "https://pmkisan.gov.in/",
+    "imageUrl": "/images/schemes/agriculture-farmer-2.jpg"
   },
   {
     "id": 3,
@@ -42,7 +44,8 @@
       "state": "All"
     },
     "tags": ["Housing", "Low Income", "Central Scheme"],
-    "applyUrl": "https://pmaymis.gov.in/"
+    "applyUrl": "https://pmaymis.gov.in/",
+    "imageUrl": "/images/schemes/housing-1.jpg"
   },
   {
     "id": 4,
@@ -57,7 +60,8 @@
       "state": "All"
     },
     "tags": ["For Entrepreneurs", "Loan", "Central Scheme"],
-    "applyUrl": "https://www.mudra.org.in/"
+    "applyUrl": "https://www.mudra.org.in/",
+    "imageUrl": "/images/schemes/entrepreneur-1.jpg"
   },
   {
     "id": 5,
@@ -72,7 +76,8 @@
       "state": "All"
     },
     "tags": ["For Girls", "Education", "Savings", "Central Scheme"],
-    "applyUrl": "https://www.indiapost.gov.in/Financial/Pages/Content/Sukanya-Samriddhi-Account.aspx"
+    "applyUrl": "https://www.indiapost.gov.in/Financial/Pages/Content/Sukanya-Samriddhi-Account.aspx",
+    "imageUrl": "/images/schemes/women-1.jpg"
   },
   {
     "id": 6,
@@ -87,7 +92,8 @@
       "state": "All"
     },
     "tags": ["Pension", "Unorganized Sector", "Central Scheme"],
-    "applyUrl": "https://maandhan.in/"
+    "applyUrl": "https://maandhan.in/",
+    "imageUrl": "/images/schemes/pension-1.jpg"
   },
   {
     "id": 7,
@@ -102,7 +108,8 @@
       "state": "All"
     },
     "tags": ["For Students", "Scholarship", "Education", "Central Scheme"],
-    "applyUrl": "https://scholarships.gov.in/"
+    "applyUrl": "https://scholarships.gov.in/",
+    "imageUrl": "/images/schemes/education-1.jpg"
   },
   {
     "id": 8,
@@ -117,7 +124,8 @@
       "state": "All"
     },
     "tags": ["For Senior Citizens", "Pension", "Central Scheme"],
-    "applyUrl": "https://licindia.in/Products/Pension-Plans/Pradhan-Mantri-Vaya-Vandana-Yojana"
+    "applyUrl": "https://licindia.in/Products/Pension-Plans/Pradhan-Mantri-Vaya-Vandana-Yojana",
+    "imageUrl": "/images/schemes/senior-citizen-1.jpg"
   },
   {
     "id": 9,
@@ -132,7 +140,8 @@
       "state": "All"
     },
     "tags": ["For Women", "For SC/ST", "Entrepreneurship", "Loan", "Central Scheme"],
-    "applyUrl": "https://www.standupmitra.in/"
+    "applyUrl": "https://www.standupmitra.in/",
+    "imageUrl": "/images/schemes/entrepreneur-2.jpg"
   },
   {
     "id": 10,
@@ -147,7 +156,8 @@
       "state": "All"
     },
     "tags": ["For Women", "BPL", "LPG Connection", "Central Scheme"],
-    "applyUrl": "https://pmuy.gov.in/"
+    "applyUrl": "https://pmuy.gov.in/",
+    "imageUrl": "/images/schemes/women-2.jpg"
   },
   {
     "id": 11,
@@ -162,7 +172,8 @@
       "state": "All"
     },
     "tags": ["Pension", "Unorganized Sector", "Central Scheme"],
-    "applyUrl": "https://www.npscra.nsdl.co.in/scheme-details.php"
+    "applyUrl": "https://www.npscra.nsdl.co.in/scheme-details.php",
+    "imageUrl": "/images/schemes/pension-2.jpg"
   },
   {
     "id": 12,
@@ -177,7 +188,8 @@
       "state": "All"
     },
     "tags": ["Skill Development", "For Youth", "Training", "Central Scheme"],
-    "applyUrl": "https://www.pmkvyofficial.org/"
+    "applyUrl": "https://www.pmkvyofficial.org/",
+    "imageUrl": "/images/schemes/skill-development-1.jpg"
   },
   {
     "id": 13,
@@ -192,7 +204,8 @@
       "state": "All"
     },
     "tags": ["For Entrepreneurs", "Business Loan", "MSME", "Central Scheme"],
-    "applyUrl": "https://www.mudra.org.in/"
+    "applyUrl": "https://www.mudra.org.in/",
+    "imageUrl": "/images/schemes/entrepreneur-8.jpg"
   },
   {
     "id": 14,
@@ -207,7 +220,8 @@
       "state": "All"
     },
     "tags": ["For Entrepreneurs", "MSME", "Collateral-free Loan", "Central Scheme"],
-    "applyUrl": "https://www.cgtmse.in/"
+    "applyUrl": "https://www.cgtmse.in/",
+    "imageUrl": "/images/schemes/entrepreneur-3.jpg"
   },
   {
     "id": 15,
@@ -222,7 +236,8 @@
       "state": "All"
     },
     "tags": ["For Entrepreneurs", "Subsidy", "Employment Generation", "Central Scheme"],
-    "applyUrl": "https://msme.gov.in/schemes/prime-ministers-employment-generation-programme-pmegp"
+    "applyUrl": "https://msme.gov.in/schemes/prime-ministers-employment-generation-programme-pmegp",
+    "imageUrl": "/images/schemes/entrepreneur-4.jpg"
   },
   {
     "id": 16,
@@ -237,7 +252,8 @@
       "state": "All"
     },
     "tags": ["For Entrepreneurs", "Technology Upgradation", "MSME", "Subsidy", "Central Scheme"],
-    "applyUrl": "https://msme.gov.in/schemes/technology-upgradation-and-quality-certification"
+    "applyUrl": "https://msme.gov.in/schemes/technology-upgradation-and-quality-certification",
+    "imageUrl": "/images/schemes/entrepreneur-5.jpg"
   },
   {
     "id": 17,
@@ -252,7 +268,8 @@
       "state": "All"
     },
     "tags": ["For Startups", "Seed Funding", "Innovation", "Central Scheme"],
-    "applyUrl": "https://www.startupindia.gov.in/content/sih/en/government-schemes/seed-fund-scheme.html"
+    "applyUrl": "https://www.startupindia.gov.in/content/sih/en/government-schemes/seed-fund-scheme.html",
+    "imageUrl": "/images/schemes/entrepreneur-6.jpg"
   },
   {
     "id": 18,
@@ -267,7 +284,8 @@
       "state": "All"
     },
     "tags": ["For Entrepreneurs", "Quality Certification", "MSME", "Manufacturing", "Central Scheme"],
-    "applyUrl": "https://zed.msme.gov.in/"
+    "applyUrl": "https://zed.msme.gov.in/",
+    "imageUrl": "/images/schemes/entrepreneur-7.jpg"
   },
   {
     "id": 19,
@@ -282,7 +300,8 @@
       "state": "All"
     },
     "tags": ["For Entrepreneurs", "Rural Industry", "Innovation", "Incubation", "Central Scheme"],
-    "applyUrl": "https://msme.gov.in/schemes/entrepreneurship-and-skill-development"
+    "applyUrl": "https://msme.gov.in/schemes/entrepreneurship-and-skill-development",
+    "imageUrl": "/images/schemes/entrepreneur-rural-1.jpg"
   },
   {
     "id": 20,
@@ -297,6 +316,7 @@
       "state": "All"
     },
     "tags": ["For Women", "Entrepreneurship", "Training", "Central Scheme"],
-    "applyUrl": "https://msme.gov.in/schemes/entrepreneurship-and-skill-development"
+    "applyUrl": "https://msme.gov.in/schemes/entrepreneurship-and-skill-development",
+    "imageUrl": "/images/schemes/women-entrepreneur-1.jpg"
   }
 ]

@@ -47,34 +47,49 @@ const SchemeCard = ({ scheme }) => {
 
   // Get default image based on tags
   const getDefaultImage = () => {
+    // All images should be fixed now, but keep this as a fallback
+    const brokenImageMap = {};
+
+    // If scheme has an imageUrl property, check if it's in the broken image map
+    if (scheme.imageUrl) {
+      return brokenImageMap[scheme.imageUrl] || scheme.imageUrl;
+    }
+
+    // Fallback to tag-based image selection
     if (!scheme.tags || scheme.tags.length === 0) {
-      return 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80';
+      return '/images/schemes/general-default.jpg';
     }
 
     const tags = scheme.tags.map(tag => tag.toLowerCase());
 
     if (tags.some(tag => tag.includes('farmer') || tag.includes('agriculture'))) {
-      return 'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80';
+      return '/images/schemes/agriculture-default.jpg';
     } else if (tags.some(tag => tag.includes('student') || tag.includes('education'))) {
-      return 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80';
+      return '/images/schemes/education-default.jpg';
     } else if (tags.some(tag => tag.includes('entrepreneur') || tag.includes('business'))) {
-      return 'https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80';
+      return '/images/schemes/entrepreneur-default.jpg';
     } else if (tags.some(tag => tag.includes('women') || tag.includes('female'))) {
-      return 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80';
+      return '/images/schemes/women-default.jpg';
     } else if (tags.some(tag => tag.includes('housing') || tag.includes('home'))) {
-      return 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80';
+      return '/images/schemes/housing-default.jpg';
+    } else if (tags.some(tag => tag.includes('pension') || tag.includes('senior'))) {
+      return '/images/schemes/senior-default.jpg';
     } else {
-      return 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80';
+      return '/images/schemes/general-default.jpg';
     }
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow duration-300 h-full flex flex-col">
+    <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow duration-300 h-full flex flex-col w-full">
       <div className="h-48 overflow-hidden relative">
         <img
           src={getDefaultImage()}
           alt={scheme.name}
           className="w-full h-full object-cover"
+          onError={(e) => {
+            e.target.onerror = null;
+            e.target.src = '/images/schemes/general-default.jpg';
+          }}
         />
         <div className="absolute top-2 left-2 bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">
           Eligible
